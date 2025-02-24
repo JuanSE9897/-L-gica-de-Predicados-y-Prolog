@@ -1,3 +1,4 @@
+%HECHOS
 padrede(abraham,homero).
 padrede(abraham,herbert).
 padrede(homero,lisa).
@@ -7,7 +8,7 @@ padrede(clancy,patty).
 padrede(clancy,selma).
 padrede(clancy,marge).
 
-
+%HECHOS
 madrede(mona,homero).
 madrede(mona,herbert).
 madrede(marge,lisa).
@@ -18,7 +19,7 @@ madrede(jacqueline,marge).
 madrede(jacqueline,selma).
 madrede(jacqueline,patty).
 
-
+%REGLAS 
 hijode(B,A):- padrede(A,B).
 hijode(B,A):- madrede(A,B).
 abuelode(A, C):- padrede(A, B), padrede(B, C).
